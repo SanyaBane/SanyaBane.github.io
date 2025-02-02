@@ -13,18 +13,10 @@ const ModDetails = () => {
 
   const spellIcons = (
     <div className="spellicons-container">
-      <Link to={`/`}>
-        <button className="back-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M39 12H5"></path>
-            <path d="M12 5l-7 7 7 7"></path>
-          </svg>
-        </button>
-      </Link>
       <p className="spellicons-text">Spells:</p>
       <div className="spellicons-images">
-        {modDetailedInfoData.spellIcons.map((spellIcon) => (
-          <img src={spellIcon.image} alt="image" className="spellicon-image" />
+        {modDetailedInfoData.spellIcons.map((spellIcon, index) => (
+          <img className="spellicon-image" key={`spellIcon_${index}`} src={spellIcon.image} alt="image" />
         ))}
       </div>
     </div>
@@ -34,17 +26,23 @@ const ModDetails = () => {
     <div className="loadouts-container">
       <p className="loadouts-text">Loadout:</p>
       <div className="loadouts-images">
-        {modDetailedInfoData.loadoutImages.map((loadoutImage) => (
-          <img src={loadoutImage.image} alt="image" className="loadouts-image" />
+        {modDetailedInfoData.loadoutImages.map((loadoutImage, index) => (
+          <img className="loadouts-image" key={`loadout_${index}`} src={loadoutImage.image} alt="image" />
         ))}
       </div>
     </div>
   );
 
   return (
-    <div className="mod-detail">
+    <div>
       <div className="title-container">
-        <img src={modDetailedInfoData.titleImage} alt="image" className="title-image" />
+        <Link className="back-button-container" to={`/`}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M32 12H5"></path>
+            <path d="M12 5l-7 7 7 7"></path>
+          </svg>
+        </Link>
+        <img className="title-image" src={modDetailedInfoData.titleImage} alt="image" />
         <p className="title-text">{modDetailedInfoData.modSelectionInfoProps?.heroName}</p>
       </div>
       {spellIcons}

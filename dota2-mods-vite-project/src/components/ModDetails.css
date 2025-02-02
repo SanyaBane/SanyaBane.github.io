@@ -1,34 +1,35 @@
-.back-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.back-button svg {
-  stroke: #333;
-  transition: stroke 0.3s;
-}
-
-.back-button:hover svg {
-  stroke: #007bff; /* Change color on hover */
-}
-
 .title-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* Allows absolute positioning for the back button */
+  width: 100%; /* Ensures full width */
+}
+
+.back-button-container {
+  position: absolute;
+  left: 0; /* Pushes it to the leftmost side */
+  display: flex;
+  align-items: center; /* Centers content inside */
+  padding: 5px;
+}
+
+.back-button-container svg {
+  stroke: #333;
+  transition: stroke 0.1s;
+  /*width:36px;*/
+  height:48px;
+}
+
+.back-button-container:hover svg {
+  stroke: #007bff;
+  background-color: rgba(255, 166, 0, 0.219);
 }
 
 .title-image {
-  width: 10%;
+  width: 128px;
   min-width: 64px;
+  margin-left: 10px;
 }
 
 .title-text {
@@ -38,7 +39,7 @@
   text-align: center;
   font-size: 42px;
   margin: 0;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .spellicons-text {
@@ -48,19 +49,20 @@
   text-align: center;
   font-size: 32px;
   margin: 0;
+  margin-top: 8px;
 }
 
 .spellicons-images {
   display: flex;
   justify-content: center;
+  margin-top: 6px;
 }
 
 .spellicon-image {
   margin-left: 20px;
-  width: 10%;
+  width: 96px;
   min-width: 32px;
 }
-
 
 .loadouts-text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -69,15 +71,17 @@
   text-align: center;
   font-size: 32px;
   margin: 0;
+  margin-top: 8px;
 }
 
 .loadouts-images {
   display: flex;
   justify-content: center;
+  margin-top: 6px;
 }
 
 .loadouts-image {
   margin-left: 20px;
-  width: 90%;
+  width: 1024px;
   min-width: 256px;
 }
