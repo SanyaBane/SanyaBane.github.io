@@ -4,10 +4,13 @@ import "./ModList.css";
 
 function ModList() {
   return (
-    <div className="hero-list">
-      {AllModsSelectionInfoData.map((heroSelectionData) => (
-        <ModSelectionCard key={heroSelectionData.mod_id} {...heroSelectionData} />
-      ))}
+    <div className="root-container">
+      <p className="mods-header">Mods:</p>
+      <div className="mods-list">
+        {AllModsSelectionInfoData.map((heroSelectionData) => (
+          <ModSelectionCard key={heroSelectionData.mod_id} {...heroSelectionData} />
+        ))}
+      </div>
     </div>
   );
 }

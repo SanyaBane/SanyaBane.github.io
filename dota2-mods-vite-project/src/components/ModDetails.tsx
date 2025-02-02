@@ -54,7 +54,7 @@ const ModDetails = () => {
   );
 
   return (
-    <div>
+    <div className="root-container">
       <div className="title-container">
         <Link className="back-button-container" to={`/`}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
