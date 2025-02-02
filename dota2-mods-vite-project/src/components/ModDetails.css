@@ -1,0 +1,62 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-image {
+  width: 10%;
+  min-width: 64px;
+}
+
+.title-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 42px;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.spellicons-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+}
+
+.spellicons-images {
+  display: flex;
+  justify-content: center;
+}
+
+.spellicon-image {
+  margin-left: 20px;
+  width: 10%;
+  min-width: 32px;
+}
+
+.back-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .back-button svg {
+    stroke: #333;
+    transition: stroke 0.3s;
+  }
+  
+  .back-button:hover svg {
+    stroke: #007bff; /* Change color on hover */
+  }
