@@ -1,12 +1,19 @@
-import heroSelectionImage from "./assets/modded_hero_selection_image/npc_dota_hero_pudge.png";
-import originalHeroMiniImage from "./assets/original_hero_mini_image/npc_dota_hero_pudge_png.png";
+export interface HeroSelectionData {
+  heroName: string;
+  moddedHeroSelectionImage: any;
+  originalHeroMiniImage: string;
+}
 
-const HeroSelectCard = () => {
+const HeroSelectCard = ({
+  heroName,
+  moddedHeroSelectionImage,
+  originalHeroMiniImage,
+}: HeroSelectionData) => {
   return (
     <a href="" className="clickable-container">
       <div className="image-container">
         <img
-          src={heroSelectionImage}
+          src={moddedHeroSelectionImage}
           alt="Hero Selection Image"
           className="main-image"
         />
@@ -16,7 +23,7 @@ const HeroSelectCard = () => {
           className="overlay-image"
         />
       </div>
-      <p className="hero-name">Pudge</p>
+      <p className="hero-name">{heroName}</p>
     </a>
   );
 };

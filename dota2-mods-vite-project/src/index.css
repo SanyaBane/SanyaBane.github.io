@@ -9,8 +9,8 @@
   max-width: 15%;
 }
 
-.clickable-container:hover{
-    background-color: rgb(238, 226, 57);
+.clickable-container:hover {
+  background-color: rgb(238, 226, 57);
 }
 
 .image-container {
@@ -33,12 +33,17 @@
   height: auto;
 }
 
+/* /* Makes text scale with the container */
+
 .hero-name {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  font-size: 200%; /* Makes text scale with the container */
+  font-size: 120%;
   margin-top: 0px; /* Adjust spacing */
   margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
