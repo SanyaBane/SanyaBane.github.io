@@ -86,7 +86,7 @@ export const Mod_Omniknight_Jeanne: ModSelectionInfoProps = {
 };
 export const Mod_PhantomAssassin_2B: ModSelectionInfoProps = {
   mod_id: "PhantomAssassin_2B",
-  heroName: "Phantom",
+  heroName: "Phantom Assassin",
   moddedHeroSelectionImage: "/mods_data/PhantomAssassin_2B/panorama/images/heroes/selection/npc_dota_hero_phantom_assassin.png",
   originalHeroMiniImage: "/mods_data/PhantomAssassin_2B/npc_dota_hero_phantom_assassin_png.png",
 };

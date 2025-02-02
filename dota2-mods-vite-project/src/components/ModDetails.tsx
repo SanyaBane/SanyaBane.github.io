@@ -11,9 +11,18 @@ const ModDetails = () => {
     return <div>Mod not found</div>;
   }
 
+  const downloadLink = (
+    <div className="downloadlink-container">
+      <p className="downloadlink-header">Download link:</p>
+      <Link className="downloadlink-link" to={modDetailedInfoData.downloadLink}>
+        <p className="downloadlink-text">{modDetailedInfoData.downloadLink}</p>
+      </Link>
+    </div>
+  );
+
   const spellIcons = (
     <div className="spellicons-container">
-      <p className="spellicons-text">Spells:</p>
+      <p className="spellicons-text">Spell icons:</p>
       <div className="spellicons-images">
         {modDetailedInfoData.spellIcons.map((spellIcon, index) => (
           <img className="spellicon-image" key={`spellIcon_${index}`} src={spellIcon.image} alt="image" />
@@ -22,12 +31,23 @@ const ModDetails = () => {
     </div>
   );
 
-  const loadouts = (
-    <div className="loadouts-container">
-      <p className="loadouts-text">Loadout:</p>
-      <div className="loadouts-images">
+  const loadoutImages = (
+    <div className="loadoutImages-container">
+      <p className="loadoutImages-text">Loadout:</p>
+      <div className="loadoutImages-images">
         {modDetailedInfoData.loadoutImages.map((loadoutImage, index) => (
-          <img className="loadouts-image" key={`loadout_${index}`} src={loadoutImage.image} alt="image" />
+          <img className="loadoutImages-image" key={`loadoutImag_${index}`} src={loadoutImage.image} alt="image" />
+        ))}
+      </div>
+    </div>
+  );
+
+  const ingameImages = (
+    <div className="ingameImages-container">
+      <p className="ingameImages-text">In game:</p>
+      <div className="ingameImages-images">
+        {modDetailedInfoData.ingameImages.map((ingameImage, index) => (
+          <img className="ingameImages-image" key={`ingameImage_${index}`} src={ingameImage.image} alt="image" />
         ))}
       </div>
     </div>
@@ -45,8 +65,10 @@ const ModDetails = () => {
         <img className="title-image" src={modDetailedInfoData.titleImage} alt="image" />
         <p className="title-text">{modDetailedInfoData.modSelectionInfoProps?.heroName}</p>
       </div>
+      {downloadLink}
       {spellIcons}
-      {loadouts}
+      {loadoutImages}
+      {ingameImages}
     </div>
   );
 };

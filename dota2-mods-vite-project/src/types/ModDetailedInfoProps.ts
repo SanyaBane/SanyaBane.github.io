@@ -4,9 +4,10 @@ export interface ModDetailedInfoProps {
   mod_id: string;
   modSelectionInfoProps: ModSelectionInfoProps;
   titleImage: string;
+  downloadLink: string;
   spellIcons: SpellIcon[];
   loadoutImages: LoadoutImage[];
-  //ingameImages: IngameImage[];
+  ingameImages: IngameImage[];
 }
 
 export interface SpellIcon {
