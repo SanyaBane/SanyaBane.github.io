@@ -20,6 +20,11 @@ export const AllModsDetailedInfoData: ModDetailedInfoProps[] = [
         image: "/mods_data/Pudge_Medusa/spellicons/4.png",
       },
     ],
+    loadoutImages: [
+      {
+        image: "/mods_data/Pudge_Medusa/loadout/1.jpg",
+      },
+    ],
   },
   {
     mod_id: "phoenix_megumin",
@@ -39,6 +44,11 @@ export const AllModsDetailedInfoData: ModDetailedInfoProps[] = [
         image: "/mods_data/Phoenix_Megumin/spellicons/4.png",
       },
     ],
+    loadoutImages: [
+      {
+        image: "/mods_data/Phoenix_Megumin/loadout/1.jpg",
+      },
+    ],
   },
   {
     mod_id: "wraithking_lichking",
@@ -56,6 +66,11 @@ export const AllModsDetailedInfoData: ModDetailedInfoProps[] = [
       },
       {
         image: "/mods_data/WraithKing_LichKing/spellicons/4.png",
+      },
+    ],
+    loadoutImages: [
+      {
+        image: "/mods_data/WraithKing_LichKing/loadout/1.jpg",
       },
     ],
   },

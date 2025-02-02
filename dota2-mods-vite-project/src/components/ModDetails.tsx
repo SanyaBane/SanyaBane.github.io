@@ -30,6 +30,17 @@ const ModDetails = () => {
     </div>
   );
 
+  const loadouts = (
+    <div className="loadouts-container">
+      <p className="loadouts-text">Loadout:</p>
+      <div className="loadouts-images">
+        {modDetailedInfoData.loadoutImages.map((loadoutImage) => (
+          <img src={loadoutImage.image} alt="image" className="loadouts-image" />
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <div className="mod-detail">
       <div className="title-container">
@@ -37,6 +48,7 @@ const ModDetails = () => {
         <p className="title-text">{modDetailedInfoData.modSelectionInfoProps?.heroName}</p>
       </div>
       {spellIcons}
+      {loadouts}
     </div>
   );
 };

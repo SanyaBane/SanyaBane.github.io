@@ -5,7 +5,7 @@ export interface ModDetailedInfoProps {
   modSelectionInfoProps: ModSelectionInfoProps;
   titleImage: string;
   spellIcons: SpellIcon[];
-  //loadoutImages: LoadoutImage[];
+  loadoutImages: LoadoutImage[];
   //ingameImages: IngameImage[];
 }
 
