@@ -2,7 +2,7 @@
   "name": "dota2-mods-vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sanyabane.github.io",
+  "homepage": "https://sanyabane.github.io/sanyabane.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -13,9 +13,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "-": "^0.0.1",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.5"
+    "react-router-dom": "^7.1.5",
+    "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
