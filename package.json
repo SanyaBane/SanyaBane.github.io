@@ -2,7 +2,7 @@
   "name": "dota2-mods-vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sanyabane.github.io",
+  "homepage": "https://sanyabane.github.io/sanyabane.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
