@@ -1,6 +1,6 @@
 import ModList from "./components/ModList";
 import ModDetails from "./components/ModDetails";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import DiscordLogo from "./assets/discord-icon.svg?react";
 
 const Footer = () => {
